@@ -1,3 +1,7 @@
+// Importing SweetAlert2
+import Swal from '/node_modules/sweetalert2/src/sweetalert2.js'
+
+
 // Variables for the timer buttons
 let playTimer = document.querySelector('#play');
 let breakTimer = document.querySelector('#break');
@@ -19,8 +23,8 @@ function startTimer(duration, display) {
     // setInterval function that run the timer every 1000ms
     var myInterval = setInterval(function() {
         // Time conversion
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+        let minutes = parseInt(timer / 60, 10);
+        let seconds = parseInt(timer % 60, 10);
 
         // Time format
         // If the minutes or seconds is lower than 10, add a zero before the num
@@ -33,20 +37,30 @@ function startTimer(duration, display) {
         // Sound for when time is up
         let ring = new Audio('assets/sound/ring.mp3');
 
+        // Alert from SweetAlert2
+        function alert(){
+            Swal.fire({
+                title: 'The time is over!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            })
+        }
+
         // Function for when the time runs out
         // That clearInterval, change the time text for "00:00", play the sound
         // Enable the button and alert that the time is up
         function timesUp(){
             clearInterval(myInterval);
-            timerTxt.innerHTML = '00:00';
+            // Play the sound, and show the alert
             ring.play();
+            alert()
+            // Enabling the buttons
             document.getElementById("play").disabled = false;
             document.getElementById("break").disabled = false;
-            window.alert('The time is over! \uD83D\uDDFF;');
         }
 
         // Decreasing time to zero
-        if (--timer < -1) {
+        if (--timer <= -1) {
             timesUp();
         }
 

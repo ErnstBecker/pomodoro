@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/ernstbeckerneto/pomodoro/issues"
     },
-    "homepage": "https://github.com/ernstbeckerneto/pomodoro#readme"
+    "homepage": "https://github.com/ernstbeckerneto/pomodoro#readme",
+    "dependencies": {
+        "sweetalert2": "^11.4.33"
+    }
 }
