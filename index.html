@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/pomodoro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body id="backgroundImg">
+
+    <!-- Box with all the elements -->
+    <div class="pomodoroBox">
+        <!-- Time text -->
+        <span>
+            <p id="time" class="time">25:00</p>
+        </span>
+        <!-- Play/Stop/Break buttons -->
+        <span class="mediaControls">
+            <button id="play" class="controls">
+                <img class="playImg" height="47" src="assets/img/play.svg" alt="playButton">
+            </button>
+            <button id="stop" class="controls">
+                <img class="stopImg" height="47" src="assets/img/stop.svg" alt="stopButton">
+            </button>
+            <button id="break" class="controls">
+                <img class="breakImg" height="47" src="assets/img/break.svg" alt="breakButton">
+            </button>
+        </span>
+        <!-- Box with all sound buttons -->
+        <ul class="buttonBox">
+            <li> <!-- Rain sound button -->
+                <button id="rain" class="btn">
+                    <img class="svg" src="assets/img/rain.svg" alt="rain">
+                </button>
+            </li>
+            <li> <!-- Fire sound button -->
+                <button id="fire" class="btn">
+                    <img class="svg" src="assets/img/fire.svg" alt="fire">
+                </button>
+            </li>
+            <li> <!-- Train sound button -->
+                <button id="train" class="btn">
+                    <img class="svg" src="assets/img/train.svg" alt="train">
+                </button>
+            </li>
+            <li> <!-- Wind sound button -->
+                <button id="wind" class="btn">
+                    <img class="svg" src="assets/img/wind.svg" alt="wind">
+                </button>
+            </li>
+            <li> <!-- Water sound button -->
+                <button id="water" class="btn">
+                    <img class="svg" src="assets/img/water.svg" alt="water">
+                </button>
+            </li>
+            <li> <!-- Talk sound button -->
+                <button id="talk" class="btn">
+                    <img class="svg" src="assets/img/talk.svg" alt="talk">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Footer for copyright text -->
+    <footer id="footer">
+        <p id="copyright" class="copyright">Copyright © 2022 Ernst Becker Neto</p>
+    </footer>
+
+    <!-- JQuery for the button selection (Sound Buttons) -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- If the button is selected, will stay selected -->
+    <!-- When click another button, will unselect the prev button -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.btn').on('click', function(){
+            $('.btn').removeClass('active');
+            $(this).addClass('active');
+        })
+    })
+    </script>
+
+    <!-- Javascript files -->
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+    <!-- For the timer -->
+    <script src="assets/js/timer.js"></script>
+    <!-- For the sounds of the buttons -->
+    <script src="assets/js/sounds.js"></script>
+</body>
+</html>
