@@ -1,0 +1,53 @@
+@import '/node_modules/@sweetalert2/theme-dark/dark.css';
+
+:root{
+    --logo: #a5dc86;
+    --accent: #ff0043;
+    --accentDarker: rgb(255, 0, 67, 0.3);
+    --background: #080808;
+}
+
+.swal2-popup{
+    background-color: var(--background) !important;
+}
+
+.swal2-title{
+    color: #fff !important;
+}
+
+
+/* Confirm button color */
+.swal2-styled.swal2-confirm {
+    background-color: var(--accent) !important;
+}
+
+/* Confirm button color on focus */
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px var(--accentDarker) !important;
+}
+
+/*  */
+.swal2-popup.swal2-toast .swal2-success {
+    border-color: var(--accent) !important;
+}
+
+/* Animation ring + logo */
+.swal2-icon.swal2-success {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+/* Final ring logo */
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid var(--accentDarker) !important;
+}
+
+/* Final success logo */
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: var(--accent) !important;
+}
+
+/* Popup border */
+.swal2-popup{
+    border-radius: 2rem !important
+}

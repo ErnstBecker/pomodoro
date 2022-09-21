@@ -1,0 +1,170 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* Variables for the project */
+:root{
+    --logo: #a5dc86;
+    --accent: #ff0043;
+    --primary: #fafafa;
+    --secondary: #535353;
+    --tertiary: #100f10;
+    --background: #080808;
+    --font1: rgba(255, 255, 255, 0.96);
+    --font2: rgba(255, 255, 255, 0.80);
+    --font3: rgba(255, 255, 255, 0.45);
+    --accentFilter: invert(14%) sepia(85%) saturate(4689%) hue-rotate(336deg) brightness(105%) contrast(116%);
+    --logoFilter: invert(82%) sepia(23%) saturate(621%) hue-rotate(52deg) brightness(96%) contrast(90%);;
+    --selectFilter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/* Changing the background */
+body{
+    background-color: var(--background);
+    background-image: url(../img/bg.gif);
+    background-size: 100%;
+    /* background-size: 50%; */
+    /* background-size: 40rem 20rem;       Some size ideas... */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* Time text, the time format is MM:SS */
+.time{
+    display: inline-block;
+    font-family: 'Silkscreen', cursive;
+    font-size: 4.5rem;
+    color: var(--accent);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 6%;
+    top: 25%;
+}
+
+
+/* Box with all elements */
+.pomodoroBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 40rem;
+    background: rgba(25,25,25,0.1);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 50px #00000080;
+    border-top:  1px solid #ffffff80;
+    border-left:  1px solid #ffffff80;
+    backdrop-filter: blur(0.3rem);
+}
+
+/* Media buttons container */
+.mediaControls{
+    display: inline;
+    position: relative;
+
+}
+
+/* When hover the controls */
+.controls:hover{
+    filter: var(--accentFilter);
+}
+
+/* Play button */
+#play, #stop, #break{
+    position: absolute;
+    left: 3.8rem;
+    top: 11.7rem;
+}
+
+/* Stop button */
+#stop{
+    left: 8.2rem;
+}
+
+/* Break button */
+#break{
+    left: 12.4rem;
+}
+
+/* Controls (Play/Break) */
+.controls{
+    border: 0;
+    margin: 0;
+    background: 0;
+    fill: var(--accent);
+}
+
+/* Changing the mouse pointer */
+.playImg, .stopImg ,.breakImg{
+    cursor: pointer;
+}
+
+/* When the play controls is active */
+.controls:active{
+    filter: var(--logoFilter)
+}
+
+/* Button container */
+.buttonBox{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    height: 13rem;
+    width: 20rem;
+    top: 20%;
+    right: 1rem;
+}
+
+/* List with all buttons of sounds */
+li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+/* Buttons of the sounds */
+.btn{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    margin: .7rem .6rem .7rem .8rem;
+    cursor: pointer;
+    background: 0;
+    box-shadow: 10px 10px 50px #00000080;
+    border-top:  1px solid #ffffff80;
+    border-left:  1px solid #ffffff80;
+    backdrop-filter: blur(0.2rem);
+}
+
+/* When hover the button */
+.btn:hover{
+    background-color: #fff;
+}
+
+/* Changing the SVG color */
+.svg{
+    filter: var(--accentFilter);
+}
+
+/* When the button of sounds is active */
+ul li button.active{
+    background-color: #fff;
+}
+
+/* Footer */
+#footer{
+    position: absolute;
+    top: 95%;
+    left: 13rem;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    color: var(--font2);
+    font-size: 1.2rem;
+}
