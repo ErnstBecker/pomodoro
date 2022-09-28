@@ -58,6 +58,6 @@
 <div>
 <h2>📸 Screenshots</h2>
     <p>⚠️ Illustrative images do not represent the final result ⚠️</p>
-    <img width="49.75%" height="49.75%" src="https://cdn.discordapp.com/attachments/1024524922531356745/1024524938381631548/unknown.png">
-    <img width="49.75%" height="49.75%" src="https://cdn.discordapp.com/attachments/1024524922531356745/1024528935503007915/pomodoro.gif">
+    <img width="45" height="45%" src="https://cdn.discordapp.com/attachments/1024524922531356745/1024524938381631548/unknown.png">
+    <img width="45%" height="45%" src="https://cdn.discordapp.com/attachments/1024524922531356745/1024528935503007915/pomodoro.gif">
 </div>
