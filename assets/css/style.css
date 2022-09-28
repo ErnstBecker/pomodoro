@@ -3,7 +3,7 @@
 
 /* Variables for the project */
 :root{
-    --logo: #a5dc86;
+    --logo: #400011;
     --accent: #ff0043;
     --primary: #fafafa;
     --secondary: #535353;
@@ -13,7 +13,7 @@
     --font2: rgba(255, 255, 255, 0.80);
     --font3: rgba(255, 255, 255, 0.45);
     --accentFilter: invert(14%) sepia(85%) saturate(4689%) hue-rotate(336deg) brightness(105%) contrast(116%);
-    --logoFilter: invert(82%) sepia(23%) saturate(621%) hue-rotate(52deg) brightness(96%) contrast(90%);;
+    --logoFilter: invert(10%) sepia(34%) saturate(4966%) hue-rotate(321deg) brightness(76%) contrast(113%);
     --selectFilter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
