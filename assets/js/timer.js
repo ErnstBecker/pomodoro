@@ -42,7 +42,6 @@ function startTimer(duration, display) {
             ring.play();
             document.getElementById("play").disabled = false;
             document.getElementById("break").disabled = false;
-            window.alert('The time is over! \uD83D\uDDFF;');
         }
 
         // Decreasing time to zero
