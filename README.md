@@ -4,7 +4,7 @@
 
 <div align="center">
     <img height="150px" width="150px" src="assets/img/pomodoro.ico"></img>
-    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=ernstbeckerneto&repo=pomodoro&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=ff0043&icon_color=ff0043">
+    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=ernstdev&repo=pomodoro&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=ff0043&icon_color=ff0043">
     <img height="150px" width="150px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 </div>
 
@@ -25,14 +25,14 @@
 
 <div>
     <h2>💻 Project</h2>
-    <p>It's a website project based on Pomodoro Technique, who is a time management method.<br>
+    <p>It's a website project based on Pomodoro Technique, which is a time management method.<br>
     This technique consists of taking 25 minutes (usually) for your task, and 5-10 minutes of break. Usually consists of 4 cycles between your task and breaks, then you can have a break for 15-30 minutes.</p>
 </div>
 
 <div>
     <h2>📗 Running</h2>
     <h3>
-    Only click here for enter on my project:
+    Only click here to enter on my project:
     <a href="https://ernst-pomodoro.netlify.app/" rel="external" target="_blank">Pomodoro</a>
     </h3>
 </div>
