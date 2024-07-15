@@ -4,7 +4,7 @@
 
 <div align="center">
     <img height="150px" width="150px" src="assets/img/pomodoro.ico"></img>
-    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=ernstdev&repo=pomodoro&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=ff0043&icon_color=ff0043">
+    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=ernstbecker&repo=pomodoro&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=ff0043&icon_color=ff0043">
     <img height="150px" width="150px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 </div>
 
